@@ -12,16 +12,16 @@ public class Zadanie7 {
 		
 		Scanner reader = new Scanner(System.in);
 	
-	int a;
-	int b;
+	int szerokosc;
+	int dlugosc;
 	int x;
 	int y;
 	char znak;
 	
-			System.out.println("Podaj wspó³rzêdne a i b");
+			System.out.println("Podaj d³ugoœæ a i b");
 		
-			a= reader.nextInt();
-			b= reader.nextInt();
+			szerokosc= reader.nextInt();
+			dlugosc= reader.nextInt();
 		
 		
 			System.out.println("Podaj pozycje x i y");
@@ -30,8 +30,26 @@ public class Zadanie7 {
 			
 			System.out.println("Podaj znak z którego stworzyæ prostok¹t");
 			
-			char znak = in.next().charAt(0);
-			
+			 znak = reader.next().charAt(0);
+			 
+			 for(int i=0;i<y-1;i++)
+			 {
+				 System.out.println(">");
+			 }
+			 
+			 for(int l=0;l<dlugosc;l++)
+			 {
+				 for (int j=0;j<x-1;j++)
+				 {
+					 System.out.print("_ ");
+					 	 
+				 }
+				 for(int k=0;k<szerokosc;k++)
+				 {
+					 System.out.print(znak);
+				 }
+				 System.out.println();
+			 }
 	}
 }
 
